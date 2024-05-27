@@ -1,12 +1,16 @@
-gsap.registerPlugin(ScrollTrigger);
-gsap.to(".brow", {
-  trigger: ".brow",
-  y: 500,
-  pin: true,
-  start: "top top",
-  end: "+=500",
-  scrib: 1,
-  duration: { min: 0.2, max: 0.3 },
-  delay: 0.2,
-  ease: "power1.inOut",
+window.addEventListener("scroll", function () {
+  const brows = document.querySelectorAll(".brow");
+  const scrollPosition = window.scrollY || window.scrollYOffset;
+
+  const scrollTrigger = 10;
+
+  if (scrollPosition > scrollTrigger) {
+    brows.forEach(function (brow) {
+      brow.classList.add("show");
+    });
+  } else {
+    brows.forEach(function (brow) {
+      brow.classList.remove("show");
+    });
+  }
 });

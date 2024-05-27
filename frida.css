@@ -1,9 +1,17 @@
+.Frida {
+  width: 100vw;
+  background-color: #f7ca01;
+}
 body #wrap {
   width: 450px;
   height: 600px;
   z-index: 2;
   position: relative;
   perspective: 200px;
+  margin: auto;
+  margin-top: 400px;
+  display: flex;
+  align-items: center;
 }
 body #wrap:before {
   content: "";
@@ -1300,9 +1308,9 @@ body #wrap .grid .cell .plant {
   width: 250%;
   height: 250%;
   bottom: 0;
-  background: #967e27;
+  background: #396e00;
   border-radius: 100% 0 100% 50px;
-  box-shadow: inset 0 0 10px 2px #826d22;
+  box-shadow: inset 0 0 10px 2px #264702;
   transform-origin: -150px 300px;
   -webkit-animation: sway 5s ease-in-out infinite alternate;
   animation: sway 5s ease-in-out infinite alternate;
@@ -1322,9 +1330,9 @@ body #wrap .grid .cell .plant .stem {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 8px solid #826d22;
+  border: 8px solid #1b3104;
   border-radius: 100%;
-  border-color: #826d22 rgba(255, 255, 255, 0.0001) rgba(255, 255, 255, 0.0001)
+  border-color: #264702 rgba(255, 255, 255, 0.0001) rgba(255, 255, 255, 0.0001)
     rgba(255, 255, 255, 0.0001);
   bottom: -100%;
   left: -32.5%;
@@ -1336,7 +1344,7 @@ body #wrap .grid .cell .plant:after {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  box-shadow: inset 0 0 30px 60px #967e27;
+  box-shadow: inset 0 0 30px 60px #2c5b06;
 }
 body #wrap .grid .cell .plant:before {
   content: "";
@@ -1351,24 +1359,24 @@ body #wrap .grid .cell .plant:before {
       45deg,
       rgba(255, 255, 255, 0.0001),
       rgba(255, 255, 255, 0.0001) 10px,
-      #6e5c1c 10px,
-      #6e5c1c 11px,
-      #967e27 11px
+      #264702 10px,
+      #264702 11px,
+      #264702 11px
     ),
     repeating-linear-gradient(
       -45deg,
       rgba(255, 255, 255, 0.0001),
       rgba(255, 255, 255, 0.0001) 10px,
-      #6e5c1c 10px,
-      #6e5c1c 11px,
-      #967e27 11px
+      #264702 10px,
+      #264702 11px,
+      #264702 11px
     ),
     linear-gradient(
       to right,
       rgba(255, 255, 255, 0.0001),
       rgba(255, 255, 255, 0.0001) 49.5%,
-      #6e5c1c 49.5%,
-      #6e5c1c 50.5%,
+      #264702 49.5%,
+      #264702 50.5%,
       rgba(255, 255, 255, 0.0001) 50.5%
     );
   transform: rotate(45deg);
@@ -1820,6 +1828,8 @@ body #wrap .face .brow {
 }
 body #wrap .face .brow:before {
   content: "";
+  opacity: 0;
+  transition: 0.1s ease-in-out;
   position: absolute;
   width: 1px;
   height: 7px;
@@ -1829,10 +1839,17 @@ body #wrap .face .brow:before {
   box-shadow: 3px 0 0 #222, 5px 0 0 #222, 7px 0 0 0 #222, 9px 0 0 #222,
     11px 0 0 #222, 13px 0 0 #222, 15px 0 0 #222;
 }
+
+body #wrap .face .brow.show:before {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
 body #wrap .face .brow:nth-of-type(2) {
   box-shadow: -5px -6px 0 0 #222;
   left: 80px;
 }
+
 body #wrap .face .brow:nth-of-type(2):before {
   display: none;
 }
