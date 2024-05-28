@@ -3,7 +3,6 @@
   background-color: #a1001b;
   background-image: url('./bgflo.svg');
   background-size: 1200px;
-  padding-bottom: 200px;
   padding-top: 400px;
 }
 body #wrap {
@@ -1877,4 +1876,17 @@ body #wrap .face .brow:nth-of-type(2) {
 
 body #wrap .face .brow:nth-of-type(2):before {
   display: none;
+}
+
+@keyframes brow-move {
+  0%, 100% {
+    top: 65px;
+  }
+  50% {
+    top: 50px;
+  }
+}
+
+.brow {
+  animation: brow-move 0.5s 2;
 }
