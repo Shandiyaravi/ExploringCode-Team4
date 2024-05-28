@@ -1,6 +1,10 @@
 .Frida {
   width: 100vw;
-  background-color: #f7ca01;
+  background-color: #a1001b;
+  background-image: url('./bgflo.svg');
+  background-size: 1200px;
+  padding-bottom: 200px;
+  padding-top: 400px;
 }
 body #wrap {
   width: 450px;
@@ -14,7 +18,7 @@ body #wrap {
   align-items: center;
 }
 body #wrap:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1326,20 +1330,20 @@ body #wrap .grid .cell .plant {
   }
 }
 body #wrap .grid .cell .plant .stem {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   border: 8px solid #1b3104;
   border-radius: 100%;
-  border-color: #264702 rgba(255, 255, 255, 0.0001) rgba(255, 255, 255, 0.0001)
-    rgba(255, 255, 255, 0.0001);
+  border-color: #264702 rgba(255, 255, 255, 0.0001)
+    rgba(255, 255, 255, 0.0001) rgba(255, 255, 255, 0.0001);
   bottom: -100%;
   left: -32.5%;
   transform: rotate(-65deg);
 }
 body #wrap .grid .cell .plant:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1347,7 +1351,7 @@ body #wrap .grid .cell .plant:after {
   box-shadow: inset 0 0 30px 60px #2c5b06;
 }
 body #wrap .grid .cell .plant:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 50%;
   left: 25%;
@@ -1399,7 +1403,7 @@ body #wrap .body {
   z-index: -3;
 }
 body #wrap .body .arm {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 160px;
@@ -1431,7 +1435,7 @@ body #wrap .neck {
     inset -10px 0 20px 0 rgba(0, 0, 0, 0.15);
 }
 body #wrap .neck:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 160px;
   height: 80px;
@@ -1442,7 +1446,7 @@ body #wrap .neck:before {
   box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
 }
 body #wrap .neck:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 80%;
   left: 10%;
@@ -1468,21 +1472,23 @@ body #wrap .hair {
   left: 112.5px;
   top: 90px;
   border-radius: 75px 75px 100px 100px;
-  box-shadow: inset 2px 0 0 #222, inset 2.5px 0 0 0 rgba(255, 255, 255, 0.15),
-    inset 4px 0 0 #222, inset 4.5px 0 0 0 rgba(255, 255, 255, 0.15),
-    inset 7px 0 0 #222, inset 7.5px 0 0 0 rgba(255, 255, 255, 0.15),
-    inset 10px 0 0 #222, inset 10.5px 0 0 0 rgba(255, 255, 255, 0.15),
-    inset 14px 0 0 #222, inset 14.5px 0 0 0 rgba(255, 255, 255, 0.15),
-    inset -2px 0 0 #222, inset -2.5px 0 0 0 rgba(255, 255, 255, 0.15),
-    inset -4px 0 0 #222, inset -4.5px 0 0 0 rgba(255, 255, 255, 0.15),
-    inset -7px 0 0 #222, inset -7.5px 0 0 0 rgba(255, 255, 255, 0.15),
-    inset -10px 0 0 #222, inset -10.5px 0 0 0 rgba(255, 255, 255, 0.15),
-    inset -14px 0 0 #222, inset -14.5px 0 0 0 rgba(255, 255, 255, 0.15);
+  box-shadow: inset 2px 0 0 #222,
+    inset 2.5px 0 0 0 rgba(255, 255, 255, 0.15), inset 4px 0 0 #222,
+    inset 4.5px 0 0 0 rgba(255, 255, 255, 0.15), inset 7px 0 0 #222,
+    inset 7.5px 0 0 0 rgba(255, 255, 255, 0.15), inset 10px 0 0 #222,
+    inset 10.5px 0 0 0 rgba(255, 255, 255, 0.15), inset 14px 0 0 #222,
+    inset 14.5px 0 0 0 rgba(255, 255, 255, 0.15), inset -2px 0 0 #222,
+    inset -2.5px 0 0 0 rgba(255, 255, 255, 0.15), inset -4px 0 0 #222,
+    inset -4.5px 0 0 0 rgba(255, 255, 255, 0.15), inset -7px 0 0 #222,
+    inset -7.5px 0 0 0 rgba(255, 255, 255, 0.15), inset -10px 0 0 #222,
+    inset -10.5px 0 0 0 rgba(255, 255, 255, 0.15),
+    inset -14px 0 0 #222,
+    inset -14.5px 0 0 0 rgba(255, 255, 255, 0.15);
   z-index: -1;
 }
 body #wrap .hair:before,
 body #wrap .hair:after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -2;
   width: 60%;
@@ -1491,15 +1497,180 @@ body #wrap .hair:after {
   left: 7.5%;
   border-radius: 300px 400px 0px 0px/150px 250px 0 0;
   transform: rotate(-25deg);
-  box-shadow: -15px -5px 0 0 #222, -15px -5.5px 0 0 #333, -15px -8px 0 0 #222,
-    -15px -8.5px 0 0 #333, -15px -12px 0 0 #222, -15px -12.5px 0 0 #333,
-    -15px -15px 0 0 #222, -15px -15.5px 0 0 #333, -15px -19px 0 0 #222,
+  box-shadow: -15px -5px 0 0 #222, -15px -5.5px 0 0 #333,
+    -15px -8px 0 0 #222, -15px -8.5px 0 0 #333, -15px -12px 0 0 #222,
+    -15px -12.5px 0 0 #333, -15px -15px 0 0 #222,
+    -15px -15.5px 0 0 #333, -15px -19px 0 0 #222,
     -15px -19.5px 0 0 #333, -15px -30px #222, -10px -20px 20px #222;
   transform-style: preserve-3d;
 }
 body #wrap .hair:after {
   transform: rotate(30deg) scaleX(-1) translateZ(-20px);
   left: 35%;
+}
+
+body #wrap .hair .flower {
+  left: 50px;
+}
+body #wrap .hair .flower:nth-of-type(odd) {
+  left: 95px;
+  top: -10px;
+  width: 10px;
+  height: 25px;
+  background: radial-gradient(
+    circle at top,
+    #782016 5px,
+    #a32b1e 5px
+  );
+  border-radius: 20px 20px 50px 50px/20px 20px 75px 75px;
+  z-index: -1;
+}
+body #wrap .hair .flower:nth-of-type(odd) .petal {
+  height: 100%;
+  width: 100%;
+  background: #c33424;
+  border-radius: 2px 50px 5px 50px;
+  left: -40%;
+  transform-origin: bottom;
+  transform: rotate(-5deg);
+  top: 3.5px;
+}
+body #wrap .hair .flower:nth-of-type(odd) .petal:nth-of-type(2),
+body #wrap .hair .flower:nth-of-type(odd) .petal:nth-of-type(3) {
+  transform: rotate(-18deg);
+  filter: brightness(0.75);
+  left: -60%;
+}
+body #wrap .hair .flower:nth-of-type(odd) .petal:nth-of-type(3) {
+  transform: rotate(18deg) scaleX(-1);
+  filter: brightness(0.75);
+  left: 40%;
+}
+body #wrap .hair .flower:nth-of-type(odd) .petal:nth-of-type(4) {
+  transform: rotate(5deg) scaleX(-1);
+  filter: brightness(1);
+  left: 60%;
+}
+body #wrap .hair .flower:nth-of-type(even) {
+  width: 15px;
+  height: 15px;
+  top: 20px;
+  z-index: 2;
+}
+body #wrap .hair .flower:nth-of-type(even):before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.15);
+  background: #eeae17;
+  z-index: 2;
+}
+body #wrap .hair .flower:nth-of-type(even) .petal {
+  width: 60px;
+  height: 5px;
+  left: calc(50% - 30px);
+  top: calc(50% - 2.5px);
+  z-index: -1;
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(-135deg, #a32b1e, #fff 150%);
+  border-radius: 100% 0;
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(1) {
+  transform: rotate(36deg);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(2) {
+  transform: rotate(72deg);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(3) {
+  transform: rotate(108deg);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(4) {
+  transform: rotate(144deg);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(5) {
+  transform: rotate(180deg);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(6) {
+  transform: rotate(216deg);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(7) {
+  transform: rotate(252deg);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(8) {
+  transform: rotate(288deg);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(9) {
+  transform: rotate(324deg);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(even) {
+  filter: brightness(0.95);
+}
+body #wrap .hair .flower:nth-of-type(even) .petal:nth-of-type(10) {
+  transform: rotate(360deg);
+}
+body #wrap .hair .flower:first-of-type {
+  transform: scale(1.35);
+  top: -17.5px;
+}
+body #wrap .hair .flower:nth-of-type(3) {
+  left: 15px;
+  top: 20px;
+  transform: rotate(-25deg);
+  filter: brightness(3) hue-rotate(60deg);
+}
+body #wrap .hair .flower:nth-of-type(5) {
+  left: 180px;
+  top: 20px;
+  transform: rotate(25deg);
+  filter: brightness(1.25) hue-rotate(-20deg);
+}
+body #wrap .hair .flower:nth-of-type(4) {
+  left: 135px;
+}
+body #wrap .hair .flower:nth-of-type(4) .petal:before {
+  background: linear-gradient(-135deg, #f69020, #fff 200%);
+}
+body #wrap .hair .flower:nth-of-type(6) {
+  left: 90px;
+  transform: scale(0.75) translateY(5px);
+}
+body #wrap .hair .flower:nth-of-type(6) .petal:before {
+  background: linear-gradient(-135deg, #f69020, #fff 200%);
+  filter: hue-rotate(30deg);
 }
 
 body #wrap .face {
@@ -1515,11 +1686,15 @@ body #wrap .face {
 }
 body #wrap .face:before,
 body #wrap .face:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 40px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.0001), #a32b1e);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.0001),
+    #a32b1e
+  );
   border-radius: 30px 50px 50px 30px;
   bottom: 52.5px;
   left: 10px;
@@ -1541,8 +1716,9 @@ body #wrap .face .ear {
       #e1934a 10px
     ),
     #e1934a;
-  box-shadow: inset 0 -10px 5px 0 #e1934a, inset 0 0 5px 1px rgba(0, 0, 0, 0.35),
-    inset 5px 2px 0 0 #e1934a, inset 6px 3px 3px 0 rgba(0, 0, 0, 0.15),
+  box-shadow: inset 0 -10px 5px 0 #e1934a,
+    inset 0 0 5px 1px rgba(0, 0, 0, 0.35), inset 5px 2px 0 0 #e1934a,
+    inset 6px 3px 3px 0 rgba(0, 0, 0, 0.15),
     3px 0 0 rgba(0, 0, 0, 0.15), 3px 0 0 #e1934a;
   border-radius: 100px 55px 5px 200px/200px 55px 5px 300px;
   top: 80px;
@@ -1575,7 +1751,7 @@ body #wrap .face .mouth .side {
   left: -5.5px;
 }
 body #wrap .face .mouth .side:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 10px;
   height: 10px;
@@ -1597,11 +1773,12 @@ body #wrap .face .nose {
   left: 60px;
   box-shadow: inset 0 -5px 2px 0 #e5a060, -12px -1px 0 -4px #e1934a,
     12px -1px 0 -4px #e1934a, -13px 0px 1px -4px rgba(0, 0, 0, 0.25),
-    13px 0px 1px -4px rgba(0, 0, 0, 0.25), 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    13px 0px 1px -4px rgba(0, 0, 0, 0.25),
+    0 2px 2px 0 rgba(0, 0, 0, 0.25);
   transform-style: preserve-3d;
 }
 body #wrap .face .nose:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 10px;
   height: 17px;
@@ -1613,7 +1790,7 @@ body #wrap .face .nose:after {
   border-radius: 5px 5px 20px 20px;
 }
 body #wrap .face .nose:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 6px;
   height: 3px;
@@ -1628,17 +1805,22 @@ body #wrap .face .eye {
   position: absolute;
   width: 20px;
   height: 9px;
-  background: radial-gradient(circle at center, #222, #222 5px, #fff 6px);
+  background: radial-gradient(
+    circle at center,
+    #222,
+    #222 5px,
+    #fff 6px
+  );
   border-radius: 100%;
   top: 82.5px;
   left: 24px;
-  box-shadow: 0 0 2px 0.5px #222, 3px 0 1px #222, -3px 0 1px #222, -4px 0 0 #222,
-    4px 0 0 #222, 0 -2px 0 0 #222, 0 -6px 0 #e1934a,
+  box-shadow: 0 0 2px 0.5px #222, 3px 0 1px #222, -3px 0 1px #222,
+    -4px 0 0 #222, 4px 0 0 #222, 0 -2px 0 0 #222, 0 -6px 0 #e1934a,
     0 -7px 0 rgba(0, 0, 0, 0.15);
   z-index: 2;
 }
 body #wrap .face .eye:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 3px;
   height: 3px;
@@ -1647,7 +1829,7 @@ body #wrap .face .eye:after {
   left: 5px;
 }
 body #wrap .face .eye:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 35px;
   height: 45px;
@@ -1662,7 +1844,7 @@ body #wrap .face .eye.right {
 }
 body #wrap .face .brow {
   position: absolute;
-  width: 55px;
+  width: 60px;
   height: 20px;
   box-shadow: 5px -6px 0 0 #222;
   top: 65px;
@@ -1670,12 +1852,12 @@ body #wrap .face .brow {
   border-radius: 100%;
 }
 body #wrap .face .brow:before {
-  content: "";
+  content: '';
   opacity: 0;
-  transition: 0.1s ease-in-out;
+  transition: 1s ease-in-out;
   position: absolute;
-  width: 1px;
-  height: 7px;
+  width: 2px;
+  height: 6px;
   top: 2.5px;
   right: -2px;
   background: #222;
