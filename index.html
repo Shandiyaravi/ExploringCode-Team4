@@ -3,11 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Frida Kahlo</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="frida.css" />
+    <link rel="stylesheet" href="flowers.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <div class="title-container">
+      <h1
+        class="title-name"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="3000"
+      >
+        FRIDA KAHLO
+      </h1>
+    </div>
     <div class="Frida">
       <div id="wrap">
         <div class="grid">
@@ -178,8 +190,9 @@
         </div>
       </div>
     </div>
+
     <div class="scrollFrida">
-      <h1>
+      <h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad provident
         tenetur quia inventore asperiores quaerat tempora assumenda mollitia at,
         unde fugit doloribus cupiditate natus, quidem architecto soluta,
@@ -200,12 +213,18 @@
         nesciunt a pariatur quasi ab dolore nam consequatur, illo minima
         repudiandae architecto? Ducimus ex, laborum natus dolore quae dolor?
         Obcaecati.
-      </h1>
+      </h2>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./frida.js"></script>
+    <script src="./flowers.js"></script>
+    <script src="./title.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r136/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
