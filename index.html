@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="frida.css" />
     <link rel="stylesheet" href="flowers.css" />
     <link rel="stylesheet" href="carousel.css" />
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
    
@@ -192,12 +194,20 @@
       </div>
     </div>
     <div class="circle-container">
+
       <img src="./Img/Paint1.jpeg" class="circle-item" alt="Paint1" />
       <img src="./Img/Paint2.jpeg" class="circle-item" alt="Paint2" />
       <img src="./Img/Paint3.jpeg" class="circle-item" alt="Paint3" />
       <img src="./Img/Paint4.jpeg" class="circle-item" alt="Paint4" />
       <img src="./Img/Paint5.jpeg" class="circle-item" alt="Paint5" />
       <img src="./Img/Paint6.jpeg" class="circle-item" alt="Paint6" />
+      
+      <div>
+        <div class="play-button" id="playButton">►</div>
+        
+        <!-- Hidden audio element -->
+        <audio id="audioPlayer" src="./requerdame.mp3" type="audio/mpeg"></audio>
+      </div>
     </div>
     <div class="quoteContainer ">
       <h2 class="quote">
@@ -218,7 +228,8 @@
     <script>
       AOS.init();
     </script>
-    <script src="./carousel.js"></script>
-    <audio id="audio" src="./audio-file.mp3"></audio>
+    <script src="./audio.js"></script>
+    <script src="'./carousel.js'"></script>
+    <audio id="audio" src="audio-file.mp3"></audio>
   </body>
 </html>
