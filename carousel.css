@@ -1,0 +1,76 @@
+/* styles.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #7f0404;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.circle-container {
+  margin-top: 500px;
+  padding-bottom: 500px;
+  position: relative;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-item {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background: #0a0807;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 10px solid #fff;
+  opacity: 0;
+  animation: animateCircle 20s infinite;
+}
+
+.circle-item:nth-child(1) {
+  animation-delay: 0s;
+}
+.circle-item:nth-child(2) {
+  animation-delay: 3s;
+}
+.circle-item:nth-child(3) {
+  animation-delay: 6s;
+}
+.circle-item:nth-child(4) {
+  animation-delay: 9s;
+}
+.circle-item:nth-child(5) {
+  animation-delay: 12s;
+}
+.circle-item:nth-child(6) {
+  animation-delay: 15s;
+}
+
+@keyframes animateCircle {
+  0% {
+    transform: rotate(0deg) translateX(300px) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) translateX(300px) rotate(-180deg);
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    opacity: 0;
+  }
+}
