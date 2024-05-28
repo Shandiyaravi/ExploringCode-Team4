@@ -13,7 +13,7 @@ body #wrap {
   position: relative;
   perspective: 200px;
   margin: auto;
-  margin-top: 400px;
+  margin-top: 700px;
   display: flex;
   align-items: center;
 }
@@ -1508,6 +1508,7 @@ body #wrap .hair:after {
   transform: rotate(30deg) scaleX(-1) translateZ(-20px);
   left: 35%;
 }
+
 body #wrap .hair .flower {
   left: 50px;
 }
@@ -1671,6 +1672,7 @@ body #wrap .hair .flower:nth-of-type(6) .petal:before {
   background: linear-gradient(-135deg, #f69020, #fff 200%);
   filter: hue-rotate(30deg);
 }
+
 body #wrap .face {
   width: 140px;
   height: 200px;
