@@ -1876,3 +1876,16 @@ body #wrap .face .brow:nth-of-type(2) {
 body #wrap .face .brow:nth-of-type(2):before {
   display: none;
 }
+
+@keyframes brow-move {
+  0%, 100% {
+    top: 65px;
+  }
+  50% {
+    top: 50px;
+  }
+}
+
+.brow {
+  animation: brow-move 0.5s 2;
+}
