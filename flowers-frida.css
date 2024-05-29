@@ -1,0 +1,13 @@
+.flowers-container{
+  position: absolute;
+  margin-top: 300px;
+  top: 50%;
+  left: 33%;
+  z-index: 1000;
+
+}
+
+.flowers-frida{
+  width: 900px;
+  height: auto;
+}
