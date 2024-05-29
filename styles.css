@@ -16,7 +16,7 @@ body {
 
 .title-container {
   position: sticky;
-  height: 90vh;
+  height: 80vh;
   top: 0;
   padding: 100px;
   z-index: 1;
@@ -110,8 +110,6 @@ body {
   -webkit-animation: moves 5s linear infinite;
   padding-bottom: 100px;
 }
-
-
 
 #persona {
   top: 10px;
