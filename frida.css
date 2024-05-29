@@ -1,7 +1,7 @@
 .Frida {
   width: 100vw;
   background-color: #a1001b;
-  background-image: url('./bgflo.svg');
+  background-image: url('./src/public/assets/img/flowers/bgflo.svg');
   background-size: 1200px;
   padding-top: 350px;
 }

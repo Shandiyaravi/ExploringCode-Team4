@@ -42,7 +42,7 @@ body {
 
 @font-face {
   font-family: "Mexican";
-  src: url("./APAPA.TTF");
+  src: url("./src/public/assets/fonts/APAPA.TTF");
 }
 
 .hover-frame {
