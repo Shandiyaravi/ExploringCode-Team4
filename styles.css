@@ -35,11 +35,17 @@ body {
   padding-top: 300px;
   padding-bottom: 500px;
 }
+@font-face {
+    font-family: "Mexican";
+    src: url("./APAPA.TTF");
+  }
 .quote {
   width: 800px;
   margin: auto;
   text-align: center;
   color: black;
+  font-family: 'Mexican';
+  font-size: xx-large;
 }
 .move {
   position: relative;
