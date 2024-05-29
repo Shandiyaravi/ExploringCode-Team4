@@ -8,8 +8,8 @@ const filterTypes = [
   "notch",
 ];
 
-const paragraphEl = document.querySelector("#quote");
-const audioEl = document.querySelector("#song");
+const paragraphEl = document.getElementById("quote");
+const audioEl = document.getElementById("laught");
 
 const ctx = new AudioContext();
 
@@ -24,7 +24,11 @@ gainNode.connect(ctx.destination);
 
 let lastFilterType = null;
 
-paragraphEl.addEventListener("mouseenter", () => {
+paragraphEl.addEventListener("mouseenter", async () => {
+  if (ctx.state === "suspended") {
+    await ctx.resume();
+  }
+
   let randomFilterType;
 
   do {

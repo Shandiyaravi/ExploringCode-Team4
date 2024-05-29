@@ -19,7 +19,7 @@ body {
   height: 100vh;
   top: 0%;
   padding: 100px;
-  padding-top:100px;
+  padding-top: 100px;
   z-index: 1;
 }
 
@@ -30,28 +30,13 @@ body {
   padding-top: 100px;
 }
 .quoteContainer {
-  position: relative;
   height: 120vw;
   width: 100%;
   background-color: #fff;
-  padding-top: 200px;
+  padding-top: 300px;
   padding-bottom: 200px;
 }
-
-.hover-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flower {
-  position: absolute;
+.quote {
   width: 800px;
   height: auto;
   opacity: 1;
@@ -71,36 +56,19 @@ body {
   text-align: center;
   color: black;
   margin-bottom: 200px;
-  padding: 20px;
-  padding-bottom: 10px;
-    border: 10px solid transparent; 
-    box-shadow: 
-        0 0 0 5px #f5f5dc, 
-        0 0 0 15px transparent, 
-        5px 5px 15px rgba(0, 0, 0, 0.5);
-    background: #fff;
-    max-width: 80%;
-    box-sizing: border-box; 
-    background-size: cover; 
-  z-index: 1;
-}
-
-.quote-author{
-  font-size: 1rem;
-  color: black;
-  text-align: right;
 }
 .move {
   position: relative;
-  -webkit-animation: moves 3s linear infinite;
+  -webkit-animation: moves 5s linear infinite;
   padding-bottom: 100px;
 }
 
 #persona {
-  width: 252px;
-  height: 179px;
-  background: url(http://st2.depositphotos.com/1557108/7496/v/950/depositphotos_74964937-Black-cat-walking-sprite.jpg);
-  -webkit-animation: walk 1s steps(4) infinite;
+  top: 10px;
+  width: 480px;
+  height: 500px;
+  background: url(./blackcat.webp);
+  -webkit-animation: walk 3s steps(200);
   position: absolute;
 }
 @-webkit-keyframes walk {
@@ -109,7 +77,7 @@ body {
   }
 
   100% {
-    background-position: -1023px;
+    background-position: -1050px;
   }
 }
 @-webkit-keyframes moves {
