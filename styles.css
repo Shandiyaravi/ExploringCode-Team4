@@ -36,9 +36,9 @@ body {
   padding-bottom: 500px;
 }
 @font-face {
-    font-family: "Mexican";
-    src: url("./APAPA.TTF");
-  }
+  font-family: 'Mexican';
+  src: url('./APAPA.TTF');
+}
 .quote {
   width: 800px;
   margin: auto;
@@ -46,6 +46,7 @@ body {
   color: black;
   font-family: 'Mexican';
   font-size: xx-large;
+  cursor: url(./Lips.png), auto;
 }
 .move {
   position: relative;
