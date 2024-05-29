@@ -1,10 +1,10 @@
 // script.js
 
-const audio = document.getElementById('audio');
-const circleItems = document.querySelectorAll('.circle-item');
+const audio = document.getElementById("audioPlayer");
+const circleItems = document.querySelectorAll(".circle-item");
 
 // Function to play audio
-circleItems.addEventListener('click', () => {
+circleItems.addEventListener("click", () => {
   const playAudio = () => {
     audio.play();
   };
