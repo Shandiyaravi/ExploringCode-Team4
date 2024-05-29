@@ -31,7 +31,7 @@ body {
 }
 .quoteContainer {
   position: relative;
-  height: 300px;
+  height: 60vh;
   width: 100%;
   background-color: #fff;
   padding-top: 200px;
@@ -45,41 +45,41 @@ body {
 
 .hover-frame {
   position: absolute;
-  top: 0;
+  top: 150px;
   left: 0;
   z-index: 2;
   width: 100%;
   height: 100%; 
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .flower {
   position: absolute;
-  width: 800px;
-  height: auto;
-  opacity: 1;
+  width: 1000px;
+  height: 700px;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   transform: scale(0.5);
 }
 
 .hover-frame:hover .flower {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1.1);
 }
 .quote-frame {
   position: relative;
-  width: 80vw;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1000px;
+  height: 600px;
   margin: auto;
   text-align: center;
   color: black;
   font-family: 'Mexican';
   font-size: xx-large;
-  margin-bottom: 200px;
-  padding: 20px;
-  padding-bottom: 10px;
+  padding: 150px;
     border: 10px solid transparent; 
     box-shadow: 
         0 0 0 5px #f5f5dc, 
@@ -92,17 +92,24 @@ body {
   z-index: 1;
 }
 
+.quote-frame h2{
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+.quote-author{
+  font-size: 1rem;
+  color: black;
+  text-align: right;
+}
+
 .move {
   position: relative;
   -webkit-animation: moves 5s linear infinite;
   padding-bottom: 100px;
 }
 
-.quote-author{
-  font-size: 1rem;
-  color: black;
-  text-align: right;
-}
+
 
 #persona {
   top: 10px;

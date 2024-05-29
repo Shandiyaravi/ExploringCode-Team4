@@ -172,7 +172,7 @@ body #wrap .hair .flower:nth-of-type(6) .petal:before {
   animation: rotate 10s linear infinite;
 }
 
-@keyframes moveAndTilt {
+/* @keyframes moveAndTilt {
   0%,
   100% {
     transform: rotate(0deg);
@@ -190,4 +190,4 @@ body #wrap .hair .flower:nth-of-type(6) .petal:before {
 
 .flower-side {
   animation: moveAndTilt 2s linear infinite;
-}
+} */
