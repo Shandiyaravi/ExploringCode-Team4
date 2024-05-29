@@ -1,24 +1,3 @@
-<<<<<<< HEAD
- // Get references to the play button and audio player
- const playButton = document.getElementById('playButton');
- const audioPlayer = document.getElementById('audioPlayer');
-
- // Toggle play/pause on button click
- playButton.addEventListener('click', function() {
-     if (audioPlayer.paused) {
-         audioPlayer.play();
-         playButton.textContent = '❚❚'; // Change button text to pause icon
-     } else {
-         audioPlayer.pause();
-         playButton.textContent = '►'; // Change button text to play icon
-     }
- });
-
- // Change button back to play icon when audio ends
- audioPlayer.addEventListener('ended', function() {
-     playButton.textContent = '►';
- });
-=======
 const filterTypes = [
   "highpass",
   "lowpass",
@@ -29,7 +8,7 @@ const filterTypes = [
   "notch",
 ];
 
-const paragraphEl = document.querySelector("#text-sound");
+const paragraphEl = document.querySelector("#quote");
 const audioEl = document.querySelector("#song");
 
 const ctx = new AudioContext();
@@ -64,4 +43,3 @@ paragraphEl.addEventListener("mouseenter", () => {
 paragraphEl.addEventListener("mouseleave", () => {
   audioEl.pause();
 });
->>>>>>> 02eed4c (Update index.html with new styles and scripts)
