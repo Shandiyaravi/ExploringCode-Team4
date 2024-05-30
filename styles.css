@@ -1,49 +1,11 @@
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  perspective: 100px;
-  overflow-x: hidden;
-}
+/*
 
-.scrollFrida {
-  height: 600px;
-  width: 100vw;
-  background-color: red;
-}
-
-.title-container {
-  position: sticky;
-  height: 80vh;
-  top: 0;
-  padding: 100px;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.title-name {
-  font-size: 175px;
-  color: #fff;
-  text-align: center;
-  padding-top: 10px;
-  width: 800px;
-}
 .quoteContainer {
   position: relative;
   height: 60vh;
-  width: 100%;
-  background-color: #fff;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
-@font-face {
-  font-family: "Mexican";
-  src: url("./src/public/assets/fonts/APAPA.TTF");
-}
+
 
 .hover-frame {
   position: absolute;
@@ -94,46 +56,4 @@
   z-index: 1;
 }
 
-.quote-frame h2{
-  font-size: 2rem;
-  color: black;
-  text-align: center;
-}
-.quote-author{
-  font-size: 1rem;
-  color: black;
-  text-align: right;
-}
-
-.move {
-  position: relative;
-  -webkit-animation: moves 5s linear infinite;
-  padding-bottom: 100px;
-}
-
-#persona {
-  top: -180px;
-  width: 480px;
-  height: 500px;
-  background: url(./src/public/assets/img/cat/blackcat.webp);
-  -webkit-animation: walk 3s steps(200);
-  position: absolute;
-}
-@-webkit-keyframes walk {
-  0% {
-    background-position: 0px;
-  }
-
-  100% {
-    background-position: -1050px;
-  }
-}
-@-webkit-keyframes moves {
-  0% {
-    left: -200px;
-  }
-
-  100% {
-    left: 1300px;
-  }
-} */
+*/
