@@ -1,0 +1,47 @@
+/* Quote Container and Cat */
+
+.quote-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 300px;
+  padding-bottom: 500px;
+}
+
+@font-face {
+  font-family: "Mexican";
+  src: url("../assets/fonts/APAPA.TTF");
+}
+
+.quote {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  color: black;
+  font-family: "Mexican";
+  font-size: xx-large;
+  cursor: url(../assets/img/Lips.png), auto;
+}
+
+.movement {
+  position: relative;
+  -webkit-animation: moves 5s linear infinite;
+}
+
+#cat {
+  position: absolute;
+  width: 480px;
+  height: 500px;
+  filter: drop-shadow(50px 15px 30px rgba(73, 72, 72, 0.538));
+  background: url(../assets/img/blackcat.webp);
+}
+
+@-webkit-keyframes moves {
+  0% {
+    left: -480px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}

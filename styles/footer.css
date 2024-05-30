@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  height: 3000vh;
+  height: 300vh;
   position: relative;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .section-pinned {
-  background-image: url(/Img/frida.png);
+  background-image: url(../assets/img/frida.png);
   background-position: center;
   background-repeat: no-repeat;
   position: sticky;
