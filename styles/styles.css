@@ -6,6 +6,13 @@
 
 body {
   background: #a1001b;
+  /* background-image: url("../assets/img/bgflo.svg"); */
   color: #fff;
   font-family: Arial, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  overflow-x: hidden;
 }

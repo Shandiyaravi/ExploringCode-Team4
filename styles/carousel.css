@@ -1,4 +1,5 @@
 .circle-wrapper {
+  background-color: #4f0f0f;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,7 +17,7 @@
 .circle-item {
   object-fit: cover;
   position: absolute;
-  width: 250px;
+  width: 300px;
   height: 350px;
   background: #0a0807;
   display: flex;
@@ -28,6 +29,15 @@
   box-shadow: 2px 2px 15px #4f0f0f;
   animation: animateCircle 20s linear infinite;
   opacity: 0;
+  scale: 1;
+  transition: transform 0.3s ease-in-out, z-index 0s 0.3s;
+}
+
+.circle-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .circle-item:nth-child(1) {
@@ -52,14 +62,43 @@
   animation-delay: 18s;
 }
 
+.circle-item-info {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  height: 100px;
+  width: 200px;
+  padding: 20px;
+}
+
+.circle-item:hover {
+  width: auto;
+  animation-play-state: paused;
+  transform: scale(1.5);
+  z-index: 20;
+}
+
+.circle-item:hover .circle-item-info {
+  visibility: visible;
+  opacity: 1;
+}
+
 @keyframes animateCircle {
   0% {
     transform: rotate(0deg) translateX(370px) rotate(0deg);
   }
-  1% {
+  0% {
     opacity: 1;
   }
   100% {
     transform: rotate(360deg) translateX(370px) rotate(-360deg);
+    opacity: 1;
   }
 }
