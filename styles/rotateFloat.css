@@ -11,8 +11,6 @@
 
 .float {
   position: absolute;
-  width: 300px;
-  height: 300px;
   top: 0%;
   transform-origin: center;
   animation: float 2s ease-in-out infinite;
@@ -25,7 +23,22 @@
   max-width: 1440px;
 }
 
-@keyframes float {
+@keyframes float{
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float2 {
+  transform-origin: center;
+  animation: float 2s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes float2{
   0%, 100% {
     transform: translateY(0);
   }
