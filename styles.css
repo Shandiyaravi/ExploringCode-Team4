@@ -29,24 +29,15 @@ body {
   padding-top: 100px;
 }
 .quoteContainer {
-  height: 300px;
-  width: 100%;
-  background-color: #fff;
-  padding-top: 300px;
-  padding-bottom: 500px;
+  
 }
 @font-face {
   font-family: 'Mexican';
   src: url('./APAPA.TTF');
 }
 .quote {
-  width: 800px;
-  margin: auto;
-  text-align: center;
-  color: black;
-  font-family: 'Mexican';
-  font-size: xx-large;
-  cursor: url(./Lips.png), auto;
+ 
+ 
 }
 .move {
   position: relative;
@@ -80,3 +71,37 @@ body {
     left: 1300px;
   }
 }
+
+.quoteContainer {
+  
+  width: 100%;
+  background-color: #fff;
+  padding-top: 150px;
+  padding-bottom: 500px;
+  margin-top: 10vh; /* Push the quote container below the viewport */
+}
+.quote {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+  font-size: xx-large;
+  margin-bottom: 200px; /* Add space between quotes */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: url(./Lips.png), auto;
+}
+.revealed {
+  opacity: 1;
+}
+
+/* @keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-80px); }
+  100% { transform: translateY(0); }
+}
+
+.revealed {
+  opacity: 1;
+  animation: bounce 0.5s;
+} */
