@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="./styles/audio.css" />
     <link rel="stylesheet" href="./styles/quote.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/rotateFloat.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="flowers-frida.css">
   </head>
   <body>
     <div class="Frida">
@@ -29,6 +31,12 @@
         >
           FRIDA KAHLO
         </h1>
+        <!-- <div class="rotate">
+          <img src="./assets/img/bgfloeach1.svg" alt="">
+        </div> -->
+        <div class="float">
+          <img src="./assets/img/bgflo.svg" alt="">
+        </div>
       </div>
       <div id="wrap">
         <div class="grid">
@@ -197,17 +205,40 @@
             <div class="side"></div>
           </div>
         </div>
-      </div>
+      </div>    
     </div>
+    
     <div src="circle-wrapper">
+      
       <div class="circle-container">
-        <img src="./assets/img/Paint1.jpeg" class="circle-item" alt="Paint1" />
-        <img src="./assets/img/Paint2.jpeg" class="circle-item" alt="Paint2" />
-        <img src="./assets/img/Paint3.jpeg" class="circle-item" alt="Paint3" />
-        <img src="./assets/img/Paint4.jpeg" class="circle-item" alt="Paint4" />
-        <img src="./assets/img/Paint5.jpeg" class="circle-item" alt="Paint5" />
-        <img src="./assets/img/Paint6.jpeg" class="circle-item" alt="Paint6" />
-        <img src="./assets/img/Paint7.jpg" class="circle-item" alt="Paint7" />
+        <div class="circle-item">
+          <img src="./assets/img/Paint1.jpeg" alt="Paint1" />
+          <div class="circle-item-info">Information about Paint1</div>
+        </div>
+        <div class="circle-item">
+          <img src="./assets/img/Paint2.jpeg" alt="Paint2" />
+          <div class="circle-item-info">Information about Paint2</div>
+        </div>
+        <div class="circle-item">
+          <img src="./assets/img/Paint3.jpeg" alt="Paint3" />
+          <div class="circle-item-info">Information about Paint3</div>
+        </div>
+        <div class="circle-item">
+          <img src="./assets/img/Paint4.jpeg" alt="Paint4" />
+          <div class="circle-item-info">Information about Paint4</div>
+        </div>
+        <div class="circle-item">
+          <img src="./assets/img/Paint5.jpeg" alt="Paint5" />
+          <div class="circle-item-info">Information about Paint5</div>
+        </div>
+        <div class="circle-item">
+          <img src="./assets/img/Paint6.jpeg" alt="Paint6" />
+          <div class="circle-item-info">Information about Paint6</div>
+        </div>
+        <div class="circle-item">
+          <img src="./assets/img/Paint7.jpg" alt="Paint7" />
+          <div class="circle-item-info">Information about Paint7</div>
+        </div>
         <div>
           <div class="play-button" id="playButton">►</div>
           <audio
@@ -219,16 +250,55 @@
       </div>
     </div>
     <div class="quote-container">
-      <h2 class="quote" id="quote">
-        <audio
-          src="./assets/audio/audio-file.mp3"
-          id="laught"
-          type="audio/mpeg"
-        ></audio>
-        <span style="font-size: xxx-large">N</span>othing is worth more than
-        laughter. It is strength to laugh and to abandon oneself, to be light.
-        Tragedy is the most ridiculous thing.
-      </h2>
+      
+      <div class="quotes"> 
+        <div class="quote" id="quote1">
+          <audio
+            src="./assets/audio/audio-file.mp3"
+            id="laught"
+            type="audio/mpeg"
+          ></audio>
+          <div class="reveal-text">
+            <h2>"<span class="quote-span">N</span>othing is worth more than laughter. It is strength to laugh and to abandon oneself, to be light. Tragedy is the most ridiculous thing."
+            </h2>
+            <p> - Frida Kahlo</p>
+            <div class="hover-frame">
+              <!-- <img src="./assets/img/bgflo2.svg" alt="Flower" class="flower-frame"> -->
+            </div>
+          </div>
+        </div>
+        <div class="quote" id="quote2">
+          <audio
+            src="./assets/audio/audio-file.mp3"
+            id="laught"
+            type="audio/mpeg"
+          ></audio>
+          <div class="reveal-text">
+            <h2>"<span class="quote-span">N</span>othing is worth more than laughter. It is strength to laugh and to abandon oneself, to be light. Tragedy is the most ridiculous thing."
+            </h2>
+            <p> - Frida Kahlo</p>
+            <div class="hover-frame">
+              <!-- <img src="./assets/img/bgflo2.svg" alt="Flower" class="flower-frame"> -->
+            </div>
+          </div>
+        </div>
+        <div class="quote" id="quote3">
+          <audio
+            src="./assets/audio/audio-file.mp3"
+            id="laught"
+            type="audio/mpeg"
+          ></audio>
+          <div class="reveal-text">
+            <h2>"<span class="quote-span">N</span>othing is worth more than laughter. It is strength to laugh and to abandon oneself, to be light. Tragedy is the most ridiculous thing."
+            </h2>
+            <p> - Frida Kahlo</p>
+            <div class="hover-frame">
+              <!-- <img src="./assets/img/bgflo2.svg" alt="Flower" class="flower-frame"> -->
+            </div>
+          </div>
+        </div>
+        
+      </div>
       <div class="movement">
         <div id="cat"></div>
       </div>
@@ -257,6 +327,8 @@
     <script src="./scripts/audioLaught.js"></script>
     <script src="./scripts/audioSong.js"></script>
     <script src="./scripts/carousel.js"></script>
+    <script src="./rotate.js"></script>
+    <script src="./text-animation.js"></script>
     <script>
       AOS.init();
     </script>
