@@ -63,7 +63,7 @@
 }
 
 .circle-item-info {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
   top: 80%;
   left: 50%;
@@ -73,9 +73,13 @@
   transition: visibility 0s, opacity 0.5s linear;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  height: 100px;
-  width: 200px;
+
   padding: 20px;
+}
+
+.circle-item-info p {
+  font-size: 0.8em;
+  text-align: center;
 }
 
 .circle-item:hover {
@@ -103,7 +107,7 @@
   }
 }
 
-.flower-line{
+.flower-line {
   width: 100%;
   margin-top: 80px;
   max-width: 1440px;
