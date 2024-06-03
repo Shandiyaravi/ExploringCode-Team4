@@ -8,11 +8,11 @@
 }
 
 @font-face {
-  font-family: "Mexican";
-  src: url("../assets/fonts/APAPA.TTF");
-} 
+  font-family: 'Mexican';
+  src: url('../assets/fonts/APAPA.TTF');
+}
 
-.quotes{
+.quotes {
   position: relative;
   display: flex;
   justify-content: center;
@@ -30,29 +30,28 @@
   margin: 0 auto;
   color: black;
   font-size: xx-large;
-  margin-bottom: 200px; 
+  margin-bottom: 200px;
   opacity: 0;
   transition: opacity 0.5s ease;
-  font-family: "Mexican";
-  cursor: url(../assets/img/Lips.png), auto;
+  font-family: 'Mexican';
 }
 
 .revealed {
   opacity: 1;
 }
 
-.quote h2{
+.quote h2 {
   font-size: 2rem;
   text-align: center;
 }
 
-.quote-span{
+.quote-span {
   font-size: 4rem;
   color: red;
 }
 
-.quote p{
-  font-size: 1rem;
+.quote p {
+  font-size: 1.5rem;
   text-align: right;
 }
 
@@ -61,7 +60,7 @@
   left: 0;
   z-index: 1;
   width: 50%;
-  height: auto; 
+  height: auto;
   display: flex;
   justify-content: center;
 }
@@ -103,9 +102,38 @@
   }
 }
 
-.flower-line2{
+.flower-line2 {
   width: 100%;
   margin-top: 410px;
   max-width: 1440px;
   position: absolute;
+}
+
+/* Quote First Letter */
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.white-shadow {
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+/* Cursor */
+
+.first-quote {
+  cursor: url(../assets/img/Lips.png), auto;
+}
+
+.second-quote {
+  cursor: url(../assets/img/heartIcon.png), auto;
+}
+
+.third-quote {
+  cursor: url(../assets/img/FlowerIcon.png), auto;
 }
