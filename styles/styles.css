@@ -13,6 +13,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  /* gap: 150px; */
   overflow-x: hidden;
 }

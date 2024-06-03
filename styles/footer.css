@@ -6,7 +6,7 @@
 
 .scroller {
   width: 36%;
-  height: 105px;
+  height: 100px;
   position: absolute;
   left: 50%;
   top: 33%;
@@ -30,6 +30,7 @@
   background-image: url(../assets/img/frida.png);
   background-position: center;
   background-repeat: no-repeat;
+  object-fit: contain;
   position: sticky;
   top: 0;
   width: 100%;

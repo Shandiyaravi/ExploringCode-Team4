@@ -3,7 +3,7 @@
   height: 300px;
   top: 0%;
   left: 50%;
-  position:fixed;
+  position: fixed;
   transform-origin: center;
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   z-index: -1;
@@ -23,8 +23,9 @@
   max-width: 1440px;
 }
 
-@keyframes float{
-  0%, 100% {
+@keyframes float {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -35,11 +36,12 @@
 .float2 {
   transform-origin: center;
   animation: float 2s ease-in-out infinite;
-  z-index: 0;
+  z-index: 10;
 }
 
-@keyframes float2{
-  0%, 100% {
+@keyframes float2 {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
