@@ -1,15 +1,15 @@
 const filterTypes = [
-  "highpass",
-  "lowpass",
-  "bandpass",
-  "lowshelf",
-  "highshelf",
-  "peaking",
-  "notch",
+  'highpass',
+  'lowpass',
+  'bandpass',
+  'lowshelf',
+  'highshelf',
+  'peaking',
+  'notch',
 ];
 
-const paragraphEl = document.getElementById("quote");
-const audioEl = document.getElementById("laught");
+const paragraphEl = document.getElementById('quote3');
+const audioEl = document.getElementById('birds');
 
 const ctx = new AudioContext();
 
@@ -24,8 +24,8 @@ gainNode.connect(ctx.destination);
 
 let lastFilterType = null;
 
-paragraphEl.addEventListener("mouseenter", async () => {
-  if (ctx.state === "suspended") {
+paragraphEl.addEventListener('mouseenter', async () => {
+  if (ctx.state === 'suspended') {
     await ctx.resume();
   }
 
@@ -44,6 +44,6 @@ paragraphEl.addEventListener("mouseenter", async () => {
   audioEl.play();
 });
 
-paragraphEl.addEventListener("mouseleave", () => {
+paragraphEl.addEventListener('mouseleave', () => {
   audioEl.pause();
 });
