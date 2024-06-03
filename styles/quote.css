@@ -127,7 +127,7 @@
 /* Cursor */
 
 .first-quote {
-  cursor: url(../assets/img/Lips.png), auto;
+  cursor: url(../assets/img/lips.png), auto;
 }
 
 .second-quote {
@@ -135,5 +135,5 @@
 }
 
 .third-quote {
-  cursor: url(../assets/img/FlowerIcon.png), auto;
+  cursor: url(../assets/img/flowerIcon.png), auto;
 }
