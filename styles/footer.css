@@ -47,3 +47,25 @@
     #d4a28b 91%
   );
 }
+
+/* Github */
+
+.github-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.github-container a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.github-container a:hover {
+  transform: scale(1.5);
+  padding: 0rem 1.5rem;
+}
